@@ -1,47 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tech Mini Store</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyber Gadget Store</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h2>Tech Mini Store</h2>
+<header class="header">
+<h2>Cyber Store</h2>
+<a class="buybtn" href="#products">BUY NOW</a>
 </header>
 
-<div class="container">
+<section class="hero">
+
+<div class="hero-text">
+<h1>Portable Cyber Multi-Tool</h1>
+<p>Explore RFID, radio protocols, IoT devices and hardware debugging.</p>
+<a href="#products" class="btn">Shop Now</a>
+</div>
+
+<div class="hero-img">
+<img src="images/flipper.jpg">
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Main Features</h2>
+
+<div class="grid">
+
+<div class="feature">
+<h3>Sub-GHz Radio</h3>
+<p>Interact with wireless devices like garage doors and IoT sensors.</p>
+</div>
+
+<div class="feature">
+<h3>RFID & NFC</h3>
+<p>Read, emulate and store RFID/NFC tags.</p>
+</div>
+
+<div class="feature">
+<h3>Infrared</h3>
+<p>Control TVs, ACs and other IR devices.</p>
+</div>
+
+<div class="feature">
+<h3>GPIO</h3>
+<p>Connect hardware and run custom electronics projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="products" class="products">
+
+<h2>Products</h2>
+
+<div class="product-grid">
 
 <div class="product">
-
 <img src="images/flipper.jpg">
-
 <h3>Flipper Zero</h3>
-<p class="price">₹19,999</p>
-
-<input id="pincode" placeholder="Enter Pincode">
-
-<button onclick="checkPin()">Check Service</button>
-
-<p id="pinmsg"></p>
-
-<div class="buttons">
-<button class="cart">Add to Cart</button>
-<button class="buy" onclick="buyNow()">Buy Now</button>
+<p>₹19999</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
 </div>
 
-<div class="warranty">
-<img src="images/warranty.png">
-<p>17 Days Warranty</p>
+<div class="product">
+<img src="images/wifi.jpg">
+<h3>WiFi Devboard</h3>
+<p>₹3999</p>
+<button>Add to Cart</button>
+<button>Buy Now</button>
 </div>
 
 </div>
 
-</div>
+</section>
 
-<script src="script.js"></script>
+<footer>
+
+<p>© 2026 Cyber Store</p>
+
+</footer>
 
 </body>
 </html>
